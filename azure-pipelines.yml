@@ -1,15 +1,15 @@
 # Starter pipeline
-- trigger:
+trigger:
   branches:
     include:
     - '*'
-- variables:
+variables:
   system_accesstoken: $(System.AccessToken)
 
-- pool:
+pool:
   vmImage: 'ubuntu-latest'
 
-- steps:
+steps:
 - checkout: self
   persistCredentials: true    #Allow scripts to access the system token
   clean: true 
