@@ -13,7 +13,7 @@
   branches:
     include:
     - '*'
- - variables:
+- variables:
   system_accesstoken: $(System.AccessToken)
 
 pool:
